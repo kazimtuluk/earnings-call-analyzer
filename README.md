@@ -1,7 +1,19 @@
-# earnings-call-analyzer
+# Earnings Call Analyzer (Mistral + Ollama)
 
-Project structure:
+AI-powered tool for summarizing earnings call transcripts, classifying sentiment,
+and extracting key financial insights.
 
-- backend/main.py
-- frontend/app.py
-- data/tesla_q4_2024.txt
+## Features
+- 3-sentence earnings call summary
+- Sentiment classification
+- Key financial insights (growth, risks, guidance)
+- FastAPI backend + Streamlit frontend
+
+## How to Run
+1. Pull model:
+   ollama pull mistral
+2. Start backend:
+   uvicorn backend.main:app --reload
+3. Start frontend:
+   streamlit run frontend/app.py
+
